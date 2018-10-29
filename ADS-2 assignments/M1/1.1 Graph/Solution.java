@@ -190,7 +190,7 @@ class AdjacencyList {
      *
      * @return     String representation of the object.
      */
-    public String printlist() {
+    public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(v + " vertices, " + e + " edges" + "\n");
         if (e > 0) {
