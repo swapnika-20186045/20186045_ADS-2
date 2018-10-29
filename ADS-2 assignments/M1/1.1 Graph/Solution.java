@@ -68,6 +68,12 @@ class GraphADT implements Graph {
      * @param      w     { parameter_description }
      */
     public void addEdge(int v, int w) {
+        if (v == w) {
+            return;
+        }
+        if (!hasEdge(v, w)) {
+            E++;
+        }
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -113,12 +119,12 @@ class GraphADT implements Graph {
         } else {
             System.out.println(V() + " vertices" + ", " + E() + " edges");
             for (int i = 0; i < tokens.length; i++) {
-            String str = "";
-            str = tokens[i] + ": ";
-            for (int k : adj(i)) {
-                str = str + tokens[k] + " ";
-            }
-            System.out.println(str);
+                String str = "";
+                str = tokens[i] + ": ";
+                for (int k : adj(i)) {
+                    str = str + tokens[k] + " ";
+                }
+                System.out.println(str);
             }
         }
     }
@@ -151,7 +157,7 @@ class GraphADT implements Graph {
                 }
                 System.out.println();
             }
-            
+
         }
     }
 }
@@ -198,21 +204,21 @@ public final class Solution {
         String keynames = scan.nextLine();
         String[] tokens = keynames.split(",");
         gobj = new GraphADT(v);
-        while(scan.hasNext()) {
+        while (scan.hasNext()) {
             String connect = scan.nextLine();
             String[] connections = connect.split(" ");
             gobj.addEdge(Integer.parseInt(connections[0]),
-                Integer.parseInt(connections[1]));
+                         Integer.parseInt(connections[1]));
         }
         switch (input) {
-            case "List":
+        case "List":
             try {
                 gobj.listdisplay(v, e, tokens);
             } catch (Exception p) {
                 System.out.println(p.getMessage());
             }
             break;
-            case "Matrix":
+        case "Matrix":
             try {
                 gobj.matrixdisplay(v, e);
             } catch (Exception p) {
