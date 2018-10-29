@@ -102,6 +102,7 @@ public final class Solution {
             switch (type) {
             case "List":
              AdjacencyList al = new AdjacencyList(vertices, edges);
+             System.out.println(al);
             // case "Matrix":
             //  AdjacencyMatrix am = new AdjacencyMatrix();
             // }
