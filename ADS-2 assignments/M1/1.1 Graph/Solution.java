@@ -1,194 +1,221 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
- * Interface for graph.
+ * Class for graph matrix.
  */
-interface Graph {
-    public int V();
-    public int E();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
-}
-/**
- * Class for graph adt.
- */
-class GraphADT implements Graph {
+class AdjacencyMatrix {
     /**
-     * declaration of variable.
+     * array declaration.
      */
-    private int V;
+    private String[] tokens;
     /**
-     * declaration of variable.
+     * 2d array declaration.
      */
-    private int E;
+    private int[][] matrix;
     /**
-     * declaration of variable.
+     * variable declaration.
      */
-    private Bag<Integer>[] adj;
+    private int v;
+    /**
+     * variable declaration.
+     */
+    private int e;
     /**
      * Constructs the object.
      */
-    GraphADT() {
-        //empty constructor.
+    AdjacencyMatrix() {
+        e = 0;
     }
     /**
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
+     * @param      scan  The scan
      */
-    public GraphADT(int V) {
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+    AdjacencyMatrix(final Scanner scan) {
+        this.v = Integer.parseInt(scan.nextLine());
+        matrix = new int[v][v];
+        int edge = Integer.parseInt(scan.nextLine());
+        tokens = scan.nextLine().split(",");
+        for (int i = 0; i < edge; i++) {
+            String[] inputs = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
-    }
-    /**
-     * no. of vertices.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int V() {
-        return V;
-    }
-    /**
-     * no. of edges.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int E() {
-        return E;
     }
     /**
      * Adds an edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      v1    the int.
+     * @param      w1    the int.
      */
-    public void addEdge(int v, int w) {
-        if (v == w) {
-            return;
+    public void addEdge(final int v1, final int w1) {
+        if (v1 != w1) {
+            if (!hasEdge(v1, w1)) {
+                matrix[v1][w1] = 1;
+                matrix[w1][v1] = 1;
+                e++;
+            }
         }
-        if (!hasEdge(v, w)) {
-            E++;
-        }
-        adj[v].add(w);
-        adj[w].add(v);
-    }
-    /**
-     * adjacent vertices.
-     *
-     * @param      v     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Iterable<Integer> adj(int v) {
-        return adj[v];
     }
     /**
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      v1    the int.
+     * @param      w1    the int.
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        for (int i = 0; i < adj[v].size(); i++) {
-            if (i == w) {
-                return true;
-            }
+    public boolean hasEdge(final int v1, final int w1) {
+        if (matrix[v1][w1] == 1) {
+            return true;
         }
         return false;
     }
     /**
-     * print list adjacency.
-     *
-     * @param      v          { parameter_description }
-     * @param      w          { parameter_description }
-     * @param      tokens     The tokens
-     *
-     * @throws     Exception  { exception_description }
+     * display method.
      */
-    public void listdisplay(int v, int w, String[] tokens) throws Exception {
-        if (w <= 1 && v <= 1) {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
-            throw new Exception("No edges");
+    public void printMatrix() {
+        String str = "";
+        str += v + " vertices, " + e + " edges" + "\n";
+        if (e > 0) {
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    str += matrix[i][j] + " ";
+                }
+                str += "\n";
+            }
+            System.out.println(str);
         } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
-            for (int i = 0; i < tokens.length; i++) {
-                String str = "";
-                str = tokens[i] + ": ";
-                for (int k : adj(i)) {
-                    str = str + tokens[k] + " ";
-                }
-                System.out.println(str);
-            }
-        }
-    }
-    /**
-     * print adjacency matrix.
-     *
-     * @param      v          { parameter_description }
-     * @param      w          { parameter_description }
-     *
-     * @throws     Exception  { exception_description }
-     */
-    public void matrixdisplay(int v, int w) throws Exception {
-        if (w <= 1 && v <= 1) {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
-            throw new Exception("No edges");
-        } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
-            int[][] disp = new int[v][v];
-            for (int i = 0; i  < v; i++) {
-                for (int j = 0; j < v; j++) {
-                    if (hasEdge(i, j)) {
-                        disp[i][j] = 1;
-                    }
-                }
-            }
-
-            for (int i = 0; i < v; i++) {
-                for (int j = 0; j < v; j++) {
-                    System.out.print(disp[i][j] + " ");
-                }
-                System.out.println();
-            }
-            
+            str += "No edges";
+            System.out.println(str);
         }
     }
 }
-// class AdjacencyMatrix implements Graph {
-//     private final int V;
-//     private int E;
-//     private boolean[][] matrix;
-//     public AdjacencyMatrix(int V) {
-//         this.V = V;
-//         this.E = 0;
-//         adj = (Bag<Integer>[]) new Bag[V];
-//         for (int v = 0; v < V; v++) {
-//             adj[v] = new Bag<Integer>();
-//         }
-//     }
-//     public int V() {
-//         return V;
-//     }
-//     public int E() {
-//         return E;
-//     }
-
 /**
- * class for Solution.
+ * List of graphs.
+ */
+class AdjacencyList {
+    /**
+     * variable declaration.
+     */
+    private int v;
+    /**
+     * variable declaration.
+     */
+    private int e;
+    /**
+     * array declaration.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * array declaration.
+     */
+    private String[] tokens;
+    /**
+     * Constructs the object.
+     */
+    AdjacencyList() {
+    }
+    /**
+     * Constructs the object.
+     *
+     * @param      scan  The scan
+     */
+    AdjacencyList(final Scanner scan) {
+        this.v = Integer.parseInt(scan.nextLine());
+        adj = (Bag<Integer>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Integer>();
+        }
+        int edges = Integer.parseInt(scan.nextLine());
+        tokens = scan.nextLine().split(",");
+        for (int i = 0; i < edges; i++) {
+            String[] inputs = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(inputs[0]),
+                    Integer.parseInt(inputs[1]));
+        }
+    }
+    /**
+     * method for vertices.
+     *
+     * @return  vertices.
+     */
+    public int v() {
+        return v;
+    }
+    /**
+     * method for edges.
+     *
+     * @return edges.
+     */
+    public int e() {
+        return e;
+    }
+    /**
+     * Adds an edge.
+     *
+     * @param      v1    the int.
+     * @param      w1    the int.
+     */
+    public void addEdge(final int v1, final int w1) {
+        if (v1 != w1) {
+            adj[v1].add(w1);
+            adj[w1].add(v1);
+            e++;
+        } else {
+            return;
+        }
+    }
+    /**
+     * method for adjacent vertex.
+     *
+     * @param      v1    the int.
+     *
+     * @return adjacent vertex.
+     */
+    public Iterable<Integer> adj(final int v1) {
+        return adj[v1];
+    }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v1    the int.
+     * @param      w1    the int.
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v1, final int w1) {
+        return true;
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String printlist() {
+        StringBuilder s = new StringBuilder();
+        s.append(v + " vertices, " + e + " edges" + "\n");
+        if (e > 0) {
+            for (int i = 0; i < v; i++) {
+                s.append(tokens[i] + ": ");
+                for (int j : adj[i]) {
+                    s.append(tokens[j] + " ");
+                }
+                s.append("\n");
+            }
+            return s.toString();
+        } else {
+            s.append("No edges");
+            return s.toString();
+        }
+    }
+}
+/**
+ * Class for solution.
  */
 public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-        //empty constructor.
     }
     /**
      * Client program.
@@ -197,33 +224,17 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        GraphADT gobj = new GraphADT();
-        String input = scan.nextLine();
-        int v = Integer.parseInt(scan.nextLine());
-        int e = Integer.parseInt(scan.nextLine());
-        String keynames = scan.nextLine();
-        String[] tokens = keynames.split(",");
-        gobj = new GraphADT(v);
-        while (scan.hasNext()) {
-            String connect = scan.nextLine();
-            String[] connections = connect.split(" ");
-            gobj.addEdge(Integer.parseInt(connections[0]),
-                         Integer.parseInt(connections[1]));
-        }
-        switch (input) {
+        String type = scan.nextLine();
+        switch (type) {
         case "List":
-            try {
-                gobj.listdisplay(v, e, tokens);
-            } catch (Exception p) {
-                System.out.println(p.getMessage());
-            }
+            AdjacencyList al = new AdjacencyList(scan);
+            System.out.println(al);
             break;
         case "Matrix":
-            try {
-                gobj.matrixdisplay(v, e);
-            } catch (Exception p) {
-                System.out.println(p.getMessage());
-            }
+            AdjacencyMatrix am = new AdjacencyMatrix(scan);
+            am.printMatrix();
+            break;
+        default :
             break;
         }
     }
