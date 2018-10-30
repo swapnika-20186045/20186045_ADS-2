@@ -1,7 +1,22 @@
+/**
+ * Class for cc.
+ */
 public class CC {
+    /**
+     * { var_description }
+     */
     private boolean[] marked;   // marked[v] = has vertex v been marked?
+    /**
+     * { var_description }
+     */
     private int[] id;           // id[v] = id of connected component containing v
+    /**
+     * { var_description }
+     */
     private int[] size;         // size[id] = number of vertices in given component
+    /**
+     * { var_description }
+     */
     private int count;          // number of connected components
 
     /**
@@ -20,8 +35,12 @@ public class CC {
             }
         }
     }
-
-    // depth-first search for a Graph
+    /**
+     * { function_description }
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(Graph G, int v) {
         marked[v] = true;
         id[v] = count;
@@ -35,10 +54,12 @@ public class CC {
 
 
     /**
-     * Returns the component id of the connected component containing vertex {@code v}.
+     * Returns the component id of the connected component containing
+     * vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the component id of the connected component containing vertex {@code v}
+     * @return the component id of the connected component containing
+     * vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int id(int v) {
@@ -47,10 +68,12 @@ public class CC {
     }
 
     /**
-     * Returns the number of vertices in the connected component containing vertex {@code v}.
+     * Returns the number of vertices in the connected component containing
+     * vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the number of vertices in the connected component containing vertex {@code v}
+     * @return the number of vertices in the connected component containing
+     * vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int size(int v) {
@@ -102,11 +125,15 @@ public class CC {
         validateVertex(w);
         return id(v) == id(w);
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+            throw new IllegalArgumentException("vertex " + v
+                            + " is not between 0 and " + (V - 1));
     }
 }

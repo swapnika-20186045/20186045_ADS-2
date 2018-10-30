@@ -1,10 +1,23 @@
 import java.util.NoSuchElementException;
-
+/**
+ * Class for graph.
+ */
 public class Graph {
+    /**
+     * { var_description }
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * { var_description }
+     */
     private final int V;
+    /**
+     * { var_description }
+     */
     private int E;
+    /**
+     * { var_description }
+     */
     private Bag<Integer>[] adj;
 
     /**
@@ -15,7 +28,8 @@ public class Graph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Graph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        if (V < 0) throw new IllegalArgumentException(
+            "Number of vertices must be nonnegative");
         this.V = V;
         this.E = 0;
         adj = (Bag<Integer>[]) new Bag[V];
@@ -41,11 +55,15 @@ public class Graph {
     public int E() {
         return E;
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+            throw new IllegalArgumentException("vertex " + v
+                + " is not between 0 and " + (V - 1));
     }
 
     /**
@@ -53,7 +71,8 @@ public class Graph {
      *
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both
+     * {@code 0 <= v < V} and {@code 0 <= w < V}
      */
     public void addEdge(int v, int w) {
         validateVertex(v);
