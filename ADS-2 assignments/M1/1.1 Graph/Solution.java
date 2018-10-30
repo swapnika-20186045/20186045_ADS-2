@@ -4,35 +4,37 @@ import java.util.Scanner;
  */
 class AdjacencyMatrix {
     /**
-     * array declaration.
+     *the tokens array is to.
+     *store all the keys.
      */
     private String[] tokens;
     /**
-     * 2d array declaration.
+     *matrix to store the realtion.
+     *between two vertices.
      */
     private int[][] matrix;
     /**
-     * variable declaration.
+     *the variable to store number.
+     *of vertices.
      */
-    private int v;
+    private int vertices;
     /**
-     * variable declaration.
+     *the variable to store edges of graph.
      */
-    private int e;
+    private int edges;
     /**
-     * Constructs the object.
+     *the constructor to initialize the class variables.
      */
     AdjacencyMatrix() {
-        e = 0;
+        edges = 0;
     }
     /**
-     * Constructs the object.
-     *
+     *the override constructor to maintian the complete graph design.
      * @param      scan  The scan
      */
     AdjacencyMatrix(final Scanner scan) {
-        this.v = Integer.parseInt(scan.nextLine());
-        matrix = new int[v][v];
+        vertices = Integer.parseInt(scan.nextLine());
+        matrix = new int[vertices][vertices];
         int edge = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
         for (int i = 0; i < edge; i++) {
@@ -41,41 +43,43 @@ class AdjacencyMatrix {
         }
     }
     /**
-     * Adds an edge.
-     *
-     * @param      v1    the int.
-     * @param      w1    the int.
+     *the method is to add an edge between two vertices.
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     * because we use has next method.
      */
-    public void addEdge(final int v1, final int w1) {
-        if (v1 != w1) {
-            if (!hasEdge(v1, w1)) {
-                matrix[v1][w1] = 1;
-                matrix[w1][v1] = 1;
-                e++;
+    public void addEdge(final int vertexOne, final int vertexTwo) {
+        if (vertexOne != vertexTwo) {
+            if (!hasEdge(vertexOne, vertexTwo)) {
+                matrix[vertexOne][vertexTwo] = 1;
+                matrix[vertexTwo][vertexOne] = 1;
+                edges++;
             }
         }
     }
     /**
-     * Determines if it has edge.
-     *
-     * @param      v1    the int.
-     * @param      w1    the int.
+     *the method is check whether there is a connection between two given.
+     *vertices the time complexity is O(1)
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v1, final int w1) {
-        if (matrix[v1][w1] == 1) {
+    public boolean hasEdge(final int vertexOne, final int vertexTwo) {
+        if (matrix[vertexOne][vertexTwo] == 1) {
             return true;
         }
         return false;
     }
     /**
-     * display method.
+     *the method is to printMat the string format of graph the time complexity
+     *will be O(N^2)
+     *N is the vertices here.
      */
-    public void printMatrix() {
+    public void printMat() {
         String str = "";
-        str += v + " vertices, " + e + " edges" + "\n";
-        if (e > 0) {
+        str += vertices + " vertices, " + edges + " edges" + "\n";
+        if (edges > 0) {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[0].length; j++) {
                     str += matrix[i][j] + " ";
@@ -94,117 +98,134 @@ class AdjacencyMatrix {
  */
 class AdjacencyList {
     /**
-     * variable declaration.
+     *the variable to store number.
+     *of vertices.
      */
-    private int v;
+    private int vertices;
     /**
-     * variable declaration.
-     */
-    private int e;
+    *the variable to store number.
+    *of edges.
+    */
+    private int edges;
     /**
-     * array declaration.
+     *the array to store bag of arrays.
      */
     private Bag<Integer>[] adj;
     /**
-     * array declaration.
+     *the variable to store all keys.
      */
     private String[] tokens;
     /**
-     * Constructs the object.
+     *an empty constructor.
      */
     AdjacencyList() {
+        //empty constructor.
     }
     /**
-     * Constructs the object.
+     *the constructor is to initialize the input given for the graph.
      *
      * @param      scan  The scan
      */
     AdjacencyList(final Scanner scan) {
-        this.v = Integer.parseInt(scan.nextLine());
-        adj = (Bag<Integer>[]) new Bag[v];
-        for (int i = 0; i < v; i++) {
+        vertices = Integer.parseInt(scan.nextLine());
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
             adj[i] = new Bag<Integer>();
         }
-        int edges = Integer.parseInt(scan.nextLine());
+        int edge = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
-        for (int i = 0; i < edges; i++) {
+        for (int i = 0; i < edge; i++) {
             String[] inputs = scan.nextLine().split(" ");
-            addEdge(Integer.parseInt(inputs[0]),
-                    Integer.parseInt(inputs[1]));
+            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
     /**
-     * method for vertices.
+     *returns the vertices of graph.
      *
-     * @return  vertices.
+     * @return vertices of graph
      */
-    public int v() {
-        return v;
+    public int vertices() {
+        return vertices;
     }
     /**
-     * method for edges.
+     *returns the edges of graph.
      *
-     * @return edges.
+     * @return edges of graph
      */
-    public int e() {
-        return e;
+    public int edges() {
+        return edges;
     }
     /**
-     * Adds an edge.
-     *
-     * @param      v1    the int.
-     * @param      w1    the int.
+     *the method is to add an edge between.
+     *two vertices.
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     * the time complexity is O(E)
+     * E denotes the number of edges we have in graph.
+     * because we use has next method.
      */
-    public void addEdge(final int v1, final int w1) {
-        if (v1 != w1) {
-            adj[v1].add(w1);
-            adj[w1].add(v1);
-            e++;
-        } else {
+    public void addEdge(final int vertexOne,
+                        final int vertexTwo) {
+        if (vertexOne == vertexTwo) {
             return;
         }
+        if (!hasEdge(vertexOne, vertexTwo)) {
+            edges++;
+        }
+        adj[vertexOne].add(vertexTwo);
+        adj[vertexTwo].add(vertexOne);
     }
     /**
-     * method for adjacent vertex.
+     *the method is to maintian a iteratable for.
+     *bag
+     *returns an interator.
+     * @param      vertex  The vertex
      *
-     * @param      v1    the int.
-     *
-     * @return adjacent vertex.
+     * @return  iterator.
      */
-    public Iterable<Integer> adj(final int v1) {
-        return adj[v1];
+    public Iterable<Integer> adj(final int vertex) {
+        return adj[vertex];
     }
     /**
-     * Determines if it has edge.
-     *
-     * @param      v1    the int.
-     * @param      w1    the int.
+     *the method is check whether there is a.
+     *connection between two given vertices.
+     *the time complexity is O(E)
+     *E is the number of edges in graph.
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v1, final int w1) {
-        return true;
+    public boolean hasEdge(final int vertexOne,
+                           final int vertexTwo) {
+        for (int each : adj(vertexOne))  {
+            if (each == vertexTwo) {
+                return true;
+            }
+        }
+        return false;
     }
     /**
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
+     *the method is to print the string format.
+     *of graph.
+     *the time complexity will be O(N^2)
+     *@return string format.
      */
     public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(v + " vertices, " + e + " edges" + "\n");
-        if (e > 0) {
-            for (int i = 0; i < v; i++) {
-                s.append(tokens[i] + ": ");
+        StringBuilder str = new StringBuilder();
+        str.append(vertices + " vertices, " + edges + " edges" + "\n");
+        if (edges > 0) {
+            for (int i = 0; i < vertices; i++) {
+                str.append(tokens[i] + ": ");
                 for (int j : adj[i]) {
-                    s.append(tokens[j] + " ");
+                    str.append(tokens[j] + " ");
                 }
-                s.append("\n");
+                str.append("\n");
             }
-            return s.toString();
+            return str.toString();
         } else {
-            s.append("No edges");
-            return s.toString();
+            str.append("No edges");
+            return str.toString();
         }
     }
 }
@@ -213,12 +234,13 @@ class AdjacencyList {
  */
 public final class Solution {
     /**
-     * Constructs the object.
+     *empty constructor.
      */
     private Solution() {
+        //empty constructor.
     }
     /**
-     * Client program.
+     *the main to read the input.
      *
      * @param      args  The arguments
      */
@@ -232,12 +254,10 @@ public final class Solution {
             break;
         case "Matrix":
             AdjacencyMatrix am = new AdjacencyMatrix(scan);
-            am.printMatrix();
+            am.printMat();
             break;
-        default :
+        default:
             break;
         }
     }
 }
-
-
