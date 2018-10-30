@@ -47,11 +47,11 @@ class Percolation {
         this.bottom = size + 1;
         this.count = 0;
         // wqu = new WeightedQuickUnionUF(size + 2);
-        Graph gh = new Graph(size + 2);
+        Graph gph = new Graph(size + 2);
         connected = new boolean[size];
         for (int i = 0; i < n; i++) {
-            gh.addEdge(top, i);
-            gh.addEdge(bottom, size - i - 1);
+            gph.addEdge(top, i);
+            gph.addEdge(bottom, size - i - 1);
         }
     }
     /**
