@@ -3,9 +3,23 @@ import java.util.Scanner;
  * Class for graph.
  */
 class Graph {
+    /**
+     * matrix declaration.
+     */
     private int[][] grid;
+    /**
+     * declaration of variable.
+     */
     private int vertices;
+    /**
+     * declaration of variable.
+     */
     private int edges;
+    /**
+     * Constructs the object.
+     *
+     * @param      vertices  The vertices
+     */
     Graph(final int vertices) {
         grid = new int[vertices][vertices];
     }
@@ -42,6 +56,7 @@ class ConnectedComponents {
         marked = new boolean[g.vertices()];
         id  = new int[g.vertices()];
         for (int i = 0; i < g.vertices(); i++) {
+            marked[i] = false;
             if (!marked[i]) {
                 dfs(g, i);
                 count++;
@@ -71,9 +86,21 @@ class ConnectedComponents {
         }
     }
 }
+/**
+ * class for Solution.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
+        //empty constructor.
     }
+    /**
+     * Client program.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String num = scan.nextLine();
