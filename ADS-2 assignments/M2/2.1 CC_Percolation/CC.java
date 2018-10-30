@@ -20,6 +20,7 @@ public class CC {
             }
         }
     }
+
     // depth-first search for a Graph
     private void dfs(Graph G, int v) {
         marked[v] = true;
@@ -31,6 +32,7 @@ public class CC {
             }
         }
     }
+
 
     /**
      * Returns the component id of the connected component containing vertex {@code v}.

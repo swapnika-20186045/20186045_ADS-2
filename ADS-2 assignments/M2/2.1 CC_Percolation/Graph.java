@@ -1,4 +1,5 @@
 import java.util.NoSuchElementException;
+
 public class Graph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
@@ -22,6 +23,7 @@ public class Graph {
             adj[v] = new Bag<Integer>();
         }
     }
+
     /**
      * Returns the number of vertices in this graph.
      *
@@ -60,25 +62,24 @@ public class Graph {
         adj[v].add(w);
         adj[w].add(v);
     }
+
     /**
-    *the method is check whether there is a.
-    *connection between two given vertices.
-    *the time complexity is O(E)
-    *E is the number of edges in graph.
-    * @param      vertexOne  The vertex one
-    * @param      vertexTwo  The vertex two
-    *
-    * @return     True if has edge, False otherwise.
-    */
-    public boolean hasEdge(final int vertexOne,
-                           final int vertexTwo) {
-        for (int each : adj(vertexOne))  {
-            if (each == vertexTwo) {
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(int v, int w) {
+        for (int each : adj[w]) {
+            if (each == v) {
                 return true;
             }
         }
         return false;
     }
+
     /**
      * Returns the vertices adjacent to vertex {@code v}.
      *
