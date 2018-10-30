@@ -1,41 +1,26 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:12: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:16: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:27:27: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:44:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:116: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:129: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:135:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:136: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:138: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:6: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:10: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:14: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:30:18: Parameter V should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:30:22: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:30:22: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:30:28: 'V' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:30:28: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:31: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:46:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:55:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:58: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:63:33: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:64: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:77:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:77:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:93:28: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:93:35: Parameter w should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:109:34: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:121:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:130: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.
