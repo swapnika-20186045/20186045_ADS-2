@@ -4,19 +4,19 @@ import java.util.NoSuchElementException;
  */
 public class Graph {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * { var_description }
+     * { var_description }.
      */
     private final int V;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int E;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Bag<Integer>[] adj;
 
@@ -27,7 +27,7 @@ public class Graph {
      * @param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Graph(int V) {
+    public Graph(final int V) {
         if (V < 0) throw new IllegalArgumentException(
             "Number of vertices must be nonnegative");
         this.V = V;
@@ -56,11 +56,11 @@ public class Graph {
         return E;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v
                 + " is not between 0 and " + (V - 1));
@@ -74,7 +74,7 @@ public class Graph {
      * @throws IllegalArgumentException unless both
      * {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         E++;
@@ -90,7 +90,7 @@ public class Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         for (int each : adj[w]) {
             if (each == v) {
                 return true;
@@ -118,7 +118,7 @@ public class Graph {
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
