@@ -30,7 +30,7 @@ class Graph {
         if (vertexOne != vertexTwo) {
             if (!hasEdge(vertexOne, vertexTwo)) {
                 grid[vertexOne][vertexTwo] = 1;
-                grid[vertexTwo][vertexOne] = 1;
+                // grid[vertexTwo][vertexOne] = 1;
                 edges++;
             }
         }
