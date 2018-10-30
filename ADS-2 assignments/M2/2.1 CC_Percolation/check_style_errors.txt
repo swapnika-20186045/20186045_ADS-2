@@ -64,6 +64,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Solution.java:50:15: 'gph' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.
