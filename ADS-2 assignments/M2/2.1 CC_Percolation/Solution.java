@@ -21,7 +21,7 @@ class Graph {
      * @param      vertices  The vertices
      */
     Graph(final int vertices) {
-        grid = new int[vertices][vertices];
+        grid = new int[vertices + 2][vertices + 2];
     }
     public int vertices() {
         return vertices;
@@ -48,11 +48,29 @@ class Graph {
         return grid[v];
     }
 }
+/**
+ * Class for connected components.
+ */
 class ConnectedComponents {
+    /**
+     * declaration of boolean array.
+     */
     private boolean[] marked;
+    /**
+     * declaration of variable.
+     */
     private int[] id;
+    /**
+     * declaration of variable.
+     */
     private int count;
-    ConnectedComponents(Graph g, int s) {
+    /**
+     * Constructs the object.
+     *
+     * @param      g     { parameter_description }
+     * @param      s     { parameter_description }
+     */
+    ConnectedComponents(final Graph g, final int s) {
         marked = new boolean[g.vertices()];
         id  = new int[g.vertices()];
         for (int i = 0; i < g.vertices(); i++) {
