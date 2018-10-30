@@ -24,7 +24,7 @@ public class CC {
      *
      * @param G the undirected graph
      */
-    public CC(final Graph G) {
+    public CC(Graph G) {
         marked = new boolean[G.V()];
         id = new int[G.V()];
         size = new int[G.V()];
@@ -41,7 +41,7 @@ public class CC {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(Graph G, int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;

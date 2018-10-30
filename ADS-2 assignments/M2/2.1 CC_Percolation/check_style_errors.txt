@@ -1,14 +1,17 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:27:27: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:44:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:27:15: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:27:21: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:44:22: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:44:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:44:31: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:129: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:135:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:136: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\CC.java:138: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M2\2.1 CC_Percolation\Graph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
