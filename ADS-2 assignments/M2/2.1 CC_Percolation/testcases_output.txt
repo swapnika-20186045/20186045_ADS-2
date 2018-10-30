@@ -3,7 +3,10 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:114)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,15 +14,20 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:98)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.open(Solution.java:94)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -27,15 +35,21 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:141)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:98)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -43,63 +57,87 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:141)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:101)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:98)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:114)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 9: Passed ##########
+########## Testcase 9: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:101)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:101)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:113)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:113)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -107,15 +145,21 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:98)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:105)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -123,70 +167,97 @@ Expected Output:
 false
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:114)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 16: Passed ##########
+########## Testcase 16: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:113)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:98)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 18: Passed ##########
+########## Testcase 18: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:101)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 19: Passed ##########
+########## Testcase 19: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:114)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 20: Passed ##########
+########## Testcase 20: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:113)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 21: Passed ##########
+########## Testcase 21: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:101)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 22: Passed ##########
+########## Testcase 22: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:101)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 
-########## Testcase 23: Passed ##########
+########## Testcase 23: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.NullPointerException
+	at Percolation.connectOpenSites(Solution.java:76)
+	at Percolation.open(Solution.java:98)
+	at Solution.main(Solution.java:167)
 ----------------------------------------
 

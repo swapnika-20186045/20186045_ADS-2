@@ -1,134 +1,172 @@
+/**
+ * percolation theory.
+ * @author Swapnika Vakacharla.
+ */
 import java.util.Scanner;
 /**
- * Class for graph.
+ * Class for percolation.
  */
-class Graph {
+class Percolation {
     /**
-     * matrix declaration.
+     * declaration of wqu.
      */
-    private int[][] grid;
+    private Graph gph;
     /**
-     * declaration of variable.
+     * private declaration of n.
      */
-    private int vertices;
+    private int n;
     /**
-     * declaration of variable.
+     * declaration of size.
      */
-    private int edges;
+    private int size;
     /**
-     * Constructs the object.
-     *
-     * @param      vertices  The vertices
+     * declaration of top.
      */
-    Graph(final int vertices) {
-        grid = new int[vertices + 2][vertices + 2];
-    }
-    public int vertices() {
-        return vertices;
-    }
-    public void addEdge(final int vertexOne, final int vertexTwo) {
-        if (vertexOne != vertexTwo) {
-            if (!hasEdge(vertexOne, vertexTwo)) {
-                grid[vertexOne][vertexTwo] = 1;
-                // grid[vertexTwo][vertexOne] = 1;
-                edges++;
-            }
-        }
-    }
-    public boolean hasEdge(final int vertexOne, final int vertexTwo) {
-        if (grid[vertexOne][vertexTwo] == 1) {
-            return true;
-        }
-        return false;
-    }
-    // public void connected(final int v1, final int w1) {
-    //     grid[v1][w1] = 1;
-    // }
-    public int[] adj(final int v) {
-        return grid[v];
-    }
-}
-/**
- * Class for connected components.
- */
-class ConnectedComponents {
+    private int top;
     /**
-     * declaration of boolean array.
+     * declaration of bottom.
      */
-    private boolean[] marked;
+    private int bottom;
     /**
-     * declaration of variable.
-     */
-    private int[] id;
-    /**
-     * declaration of variable.
+     * declaration of count.
      */
     private int count;
     /**
+     * declaration of boolean array.
+     */
+    private boolean[] connected;
+    /**
      * Constructs the object.
      *
-     * @param      g     { parameter_description }
-     * @param      s     { parameter_description }
+     * @param      n1    The n 1
      */
-    ConnectedComponents(final Graph g, final int s) {
-        marked = new boolean[g.vertices()];
-        id  = new int[g.vertices()];
-        for (int i = 0; i < g.vertices(); i++) {
-            marked[i] = false;
-            if (!marked[i]) {
-                dfs(g, i);
-                count++;
-            }
+    Percolation(final int n1) {
+        this.n = n1;
+        this.size = n1 * n1;
+        this.top = size;
+        this.bottom = size + 1;
+        this.count = 0;
+        // wqu = new WeightedQuickUnionUF(size + 2);
+        Graph gh = new Graph(size + 2);
+        connected = new boolean[size];
+        for (int i = 0; i < n; i++) {
+            gh.addEdge(top, i);
+            gh.addEdge(bottom, size - i - 1);
         }
     }
-    public int count() {
+    /**
+     * converts to 1D array.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int convert(final int i, final int j) {
+//since we take size as 0 to n-1, we decrement one value from rows and columns.
+        return n * (i - 1) + (j - 1);
+    }
+    /**
+     * Connects open sites(== full site).
+     *
+     * @param      row   The row
+     * @param      col   The col
+     */
+    private void connectOpenSites(final int row, final int col) {
+        if (connected[col] && !gph.hasEdge(row, col)) {
+            gph.addEdge(row, col);
+        }
+    }
+    /**
+     * opens the blocked sites.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     */
+    public void open(final int row, final int col) {
+        // int count = 0;
+        int index = convert(row, col);
+        connected[index] = true;
+        count++;
+        int toprow = index - n;
+        int bottomrow = index + n;
+        if (n == 1) {
+            gph.addEdge(top, index);
+            gph.addEdge(bottom, index);
+        }
+        if (bottomrow < size) { //bottom
+            connectOpenSites(index, bottomrow);
+        }
+        if (toprow >= 0) { //top
+            connectOpenSites(index, toprow);
+        }
+        if (col == 1) { //left
+            if (col != n) {
+                connectOpenSites(index, index + 1);
+            }
+            return;
+        }
+        if (col == n) { //right
+            connectOpenSites(index, index - 1);
+            return;
+        }
+        connectOpenSites(index, index + 1);
+        connectOpenSites(index, index - 1);
+    }
+    /**
+     * Determines if it is an open site.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     True if open, False otherwise.
+     */
+    public boolean isOpen(final int row, final int col) {
+        return connected[convert(row, col)];
+    }
+    /**
+     * counts number of open sites.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int numberOfOpenSites() {
         return count;
     }
-    public int id(int v) {
-        return id[v];
-    }
-    private void dfs(Graph g, int v) {
-        marked[v] = true;
-        id[v] = count;
-        for (int each : g.adj(v)) {
-            if (!marked[each]) {
-                dfs(g, each);
-            }
-        }
-    }
+    /**
+     * returns true if percolates.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean percolates() {
-        if (count > 1) {
-            return false;
-        } else {
-            return true;
-        }
+        CC connectedComponents = new CC(gph);
+        return connectedComponents.connected(top, bottom);
     }
 }
 /**
- * class for Solution.
+ * class for solution.
  */
 public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-        //empty constructor.
+        //not used
     }
     /**
-     * Client program.
+     * main function.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String num = scan.nextLine();
-        Graph gobj = new Graph(Integer.parseInt(num));
-        while (scan.hasNext()) {
-            String line = scan.nextLine();
-            String[] tokens = line.split(" ");
-            gobj.addEdge(Integer.parseInt(tokens[0]) - 1, Integer.parseInt(tokens[1]) - 1);
+        // WeightedQuickUnionUF uf = new WeightedQuickUnionUF(n);
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt(sc.nextLine());
+        Percolation p = new Percolation(n);
+        while (sc.hasNext()) {
+            String[] tokens = sc.nextLine().split(" ");
+            p.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
         }
-        ConnectedComponents obj = new ConnectedComponents(gobj, Integer.parseInt(num));
-        System.out.println(obj.percolates());
+        System.out.println(p.percolates() && p.numberOfOpenSites() != 0);
     }
 }
+
