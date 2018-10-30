@@ -64,10 +64,10 @@ class ConnectedComponents {
         }
     }
     public boolean percolates() {
-        if (count == 1) {
-            return true;
-        } else {
+        if (count > 1) {
             return false;
+        } else {
+            return true;
         }
     }
 }
