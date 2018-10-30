@@ -4,18 +4,15 @@ import java.util.Scanner;
  */
 class AdjacencyMatrix {
     /**
-     *the tokens array is to.
-     *store all the keys.
+     *the tokens array is to store all the keys.
      */
     private String[] tokens;
     /**
-     *matrix to store the realtion.
-     *between two vertices.
+     *matrix to store the realtion between two vertices.
      */
     private int[][] matrix;
     /**
-     *the variable to store number.
-     *of vertices.
+     *the variable to store number of vertices.
      */
     private int vertices;
     /**
