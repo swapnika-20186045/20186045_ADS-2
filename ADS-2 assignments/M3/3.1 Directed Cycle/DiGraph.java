@@ -1,9 +1,22 @@
-import java.util.NoSuchElementException;
-
+/**
+ * Class for di graph.
+ */
 public class DiGraph {
+    /**
+     * { var_description }
+     */
     private final int V;           // number of vertices in this digraph
+    /**
+     * { var_description }
+     */
     private int E;                 // number of edges in this digraph
+    /**
+     * { var_description }
+     */
     private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
+    /**
+     * { var_description }
+     */
     private int[] indegree;        // indegree[v] = indegree of vertex v
 
     /**
@@ -48,7 +61,8 @@ public class DiGraph {
      *
      * @param  v the tail vertex
      * @param  w the head vertex
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both {@code 0 <= v < V}
+     * and {@code 0 <= w < V}
      */
     public void addEdge(int v, int w) {
         adj[v].add(w);
@@ -60,7 +74,8 @@ public class DiGraph {
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
      *
      * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
+     * @return the vertices adjacent from vertex {@code v} in this digraph,
+     * as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Integer> adj(int v) {
