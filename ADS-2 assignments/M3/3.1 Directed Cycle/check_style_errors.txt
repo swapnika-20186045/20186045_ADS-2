@@ -7,23 +7,12 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:30: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:34:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:64: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:71: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:78:33: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:90: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:91: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:103: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:111: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:113: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:123: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:154: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:99: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:111: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:121: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Stack.java:161: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.
