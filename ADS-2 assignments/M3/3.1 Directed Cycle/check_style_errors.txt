@@ -5,12 +5,7 @@ Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\DirectedCycle.java:24:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\DirectedCycle.java:26:40: Expected @param tag for 'gph'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\DirectedCycle.java:39:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\DirectedCycle.java:42:36: Expected @param tag for 'gph'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M3\3.1 Directed Cycle\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.

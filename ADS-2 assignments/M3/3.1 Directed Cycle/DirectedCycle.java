@@ -21,7 +21,7 @@ public class DirectedCycle {
     /**
      * Determines whether the digraph {@code G} has a directed cycle and.
      * if so, finds such a cycle.
-     * @param G the digraph
+     * @param gph the digraph
      */
     public DirectedCycle(final DiGraph gph) {
         marked  = new boolean[gph.vertices()];
@@ -36,7 +36,7 @@ public class DirectedCycle {
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      gph     { parameter_description }
      * @param      v     { parameter_description }
      */
     private void dfs(final DiGraph gph, final int v) {
