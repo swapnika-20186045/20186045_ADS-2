@@ -5,19 +5,19 @@ public class DiGraph {
     /**
      * { var_description }.
      */
-    private final int vertices;           
+    private final int vertices;
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private int edges;                 
+    private int edges;
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private Bag<Integer>[] adj; 
-    /**  
-     * { var_description }
+    private Bag<Integer>[] adj;
+    /**
+     * { var_description }.
      */
-    private int[] indegree;        
+    private int[] indegree;
 
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
@@ -25,12 +25,12 @@ public class DiGraph {
      * @param  verticess the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public DiGraph(final int vertices) {
+    public DiGraph(final int verticess) {
+        this.vertices = verticess;
         if (vertices < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.vertices = vertices;
         this.edges = 0;
         indegree = new int[vertices];
         adj = (Bag<Integer>[]) new Bag[vertices];
@@ -64,7 +64,7 @@ public class DiGraph {
      * @throws IllegalArgumentException unless both {@code 0 <= v < V}
      * and {@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
         edges++;

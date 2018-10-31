@@ -23,13 +23,13 @@ public class DirectedCycle {
      * if so, finds such a cycle.
      * @param G the digraph
      */
-    public DirectedCycle(final DiGraph G) {
-        marked  = new boolean[G.vertices()];
-        onStack = new boolean[G.vertices()];
-        edgeTo  = new int[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++) {
+    public DirectedCycle(final DiGraph gph) {
+        marked  = new boolean[gph.vertices()];
+        onStack = new boolean[gph.vertices()];
+        edgeTo  = new int[gph.vertices()];
+        for (int v = 0; v < gph.vertices(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(G, v);
+                dfs(gph, v);
             }
         }
     }
@@ -39,15 +39,15 @@ public class DirectedCycle {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final DiGraph G, final int v) {
+    private void dfs(final DiGraph gph, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : gph.adj(v)) {
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(gph, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
