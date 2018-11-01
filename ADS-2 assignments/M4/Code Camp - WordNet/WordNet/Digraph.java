@@ -98,7 +98,7 @@ public class Digraph {
         int max = 0;
         for(int i = 0; i < vertices; i++) {
             if (max < outdegree(i)) {
-                max = i;
+                max = outdegree(i);
             }
         }
         return max;
