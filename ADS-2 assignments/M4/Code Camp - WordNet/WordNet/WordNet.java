@@ -60,7 +60,11 @@ public class WordNet {
 
         DirectedCycle dc = new DirectedCycle(dg);
         if (dc.hasCycle()) {
-            throw new IllegalArgumentException("Multiple roots");
+            System.out.println("Cycle detected");
+        } else if (dg.maxOutdegree() > 1) {
+            System.out.println("Multiple roots");
+        } else {
+            System.out.println(dg.toString());
         }
         //graph built
     }

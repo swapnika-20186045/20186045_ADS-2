@@ -14,7 +14,7 @@ public final class Solution {
 		switch (str2) {
 			case "Graph":
 				WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
-				System.out.println(wn.getDg().toString());
+				// System.out.println(wn.getDg().toString());
 				// System.out.println(wn.readHypernyms(str2));
 			break;
 		// 	case "Queries":
