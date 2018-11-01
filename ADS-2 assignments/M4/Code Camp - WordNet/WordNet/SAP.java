@@ -5,7 +5,7 @@ public class SAP {
     /**
      * { var_description }.
      */
-    private Digraph G;
+    private Digraph dg;
     /**
      * { var_description }.
      */
@@ -14,9 +14,9 @@ public class SAP {
     /**
     * constructor takes a digraph (not necessarily a DAG).
     **/
-    public SAP(final Digraph G) {
-        this.G = new Digraph(G);
-        bfs = new BreadthFirstDirectedPaths[this.G.vertices()];
+    public SAP(final Digraph dgg) {
+        this.dg = new Digraph(dgg);
+        bfs = new BreadthFirstDirectedPaths[this.dg.vertices()];
     }
 
     /**
@@ -29,25 +29,25 @@ public class SAP {
      * @return     { description_of_the_return_value }
      */
     public int length(final int v, final int w) {
-        if (v < 0 || v > G.vertices() - 1) {
+        if (v < 0 || v > dg.vertices() - 1) {
             throw new IndexOutOfBoundsException();
         }
 
-        if (w < 0 || w > G.vertices() - 1) {
+        if (w < 0 || w > dg.vertices() - 1) {
             throw new IndexOutOfBoundsException();
         }
 
         if (bfs[v] == null) {
-            bfs[v] = new BreadthFirstDirectedPaths(G, v);
+            bfs[v] = new BreadthFirstDirectedPaths(dg, v);
         }
 
         if (bfs[w] == null) {
-            bfs[w] = new BreadthFirstDirectedPaths(G, w);
+            bfs[w] = new BreadthFirstDirectedPaths(dg, w);
         }
 
         int length = Integer.MAX_VALUE;
 
-        for (int i = 0; i < G.vertices(); i++) {
+        for (int i = 0; i < dg.vertices(); i++) {
             if (bfs[v].hasPathTo(i) && bfs[w].hasPathTo(i)) {
                 int l = bfs[v].distTo(i) + bfs[w].distTo(i);
                 if (l < length) {
@@ -67,32 +67,36 @@ public class SAP {
         }
     }
 
-
     /**
-    * a common ancestor of v and w that participates in a shortest ancestral.
-    * path; -1 if no such path
-    **/
+     * a common ancestor of v and w that participates in a shortest ancestral.
+     * path; -1 if no such path
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int ancestor(final int v, final int w) {
-        if (v < 0 || v > G.vertices() - 1) {
+        if (v < 0 || v > dg.vertices() - 1) {
             throw new IndexOutOfBoundsException();
         }
 
-        if (w < 0 || w > G.vertices() - 1) {
+        if (w < 0 || w > dg.vertices() - 1) {
             throw new IndexOutOfBoundsException();
         }
 
         if (bfs[v] == null) {
-            bfs[v] = new BreadthFirstDirectedPaths(G, v);
+            bfs[v] = new BreadthFirstDirectedPaths(dg, v);
         }
 
         if (bfs[w] == null) {
-            bfs[w] = new BreadthFirstDirectedPaths(G, w);
+            bfs[w] = new BreadthFirstDirectedPaths(dg, w);
         }
 
         int length = Integer.MAX_VALUE;
         int ancestor = -1;
 
-        for (int i = 0; i < G.vertices(); i++) {
+        for (int i = 0; i < dg.vertices(); i++) {
             if (bfs[v].hasPathTo(i) && bfs[w].hasPathTo(i)) {
                 int l = bfs[v].distTo(i) + bfs[w].distTo(i);
                 if (l < length) {
@@ -110,9 +114,14 @@ public class SAP {
     }
 
     /**
-    * length of shortest ancestral path between any vertex in v and any.
-    * vertex in w; -1 if no such path
-    **/
+     * length of shortest ancestral path between any vertex in v and any.
+     * vertex in w; -1 if no such path
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
         if (v == null || w == null) {
             throw new NullPointerException();
@@ -137,11 +146,16 @@ public class SAP {
         }
     }
     /**
-    * a common ancestor that participates in shortest ancestral path.
-    * -1 if no such path
-    **/
+     * a common ancestor that participates in shortest ancestral path.
+     * -1 if no such path
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int ancestor(final Iterable<Integer> v, final
-        Iterable<Integer> w) {
+                        Iterable<Integer> w) {
         if (v == null || w == null) {
             throw new NullPointerException();
         }
