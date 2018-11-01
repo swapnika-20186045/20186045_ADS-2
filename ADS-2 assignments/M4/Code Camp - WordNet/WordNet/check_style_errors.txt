@@ -361,15 +361,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:2:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 145). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
