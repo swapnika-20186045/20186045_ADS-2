@@ -1,8 +1,12 @@
-/**
+﻿/**
  * Class for di graph.
  */
 public class Digraph {
-    private static final String NEWLINE = System.getProperty("line.separator");
+    /**
+     * { var_description }.
+     */
+    private static final String NEWLINE = System.getProperty(
+            "line.separator");
     /**
      * { var_description }.
      */
@@ -39,7 +43,12 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
-    public Digraph(Digraph G) {
+    /**
+     * Constructs the object.
+     *
+     * @param      G     { parameter_description }
+     */
+    public Digraph(final Digraph G) {
         this(G.vertices());
         this.edges = G.edges();
         for (int v = 0; v < vertices; v++)
@@ -110,9 +119,14 @@ public class Digraph {
     public int outdegree(final int v) {
         return adj[v].size();
     }
+    /**
+     * checks the outdegrees.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int noOfOutdegree() {
         int max = 0;
-        for(int i = 0; i < vertices; i++) {
+        for (int i = 0; i < vertices; i++) {
             if (outdegree(i) == 0) {
                 max++;
             }
@@ -146,7 +160,11 @@ public class Digraph {
         }
         return reverse;
     }
-
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
@@ -159,5 +177,6 @@ public class Digraph {
         }
         return s.toString();
     }
- 
 }
+
+
