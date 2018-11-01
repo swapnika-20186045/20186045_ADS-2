@@ -204,22 +204,20 @@ Your Output:
 Multiple roots
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
 IllegalArgumentException
-null
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
 IllegalArgumentException
-null
 ----------------------------------------
 
 ########## Testcase 13: Passed ##########

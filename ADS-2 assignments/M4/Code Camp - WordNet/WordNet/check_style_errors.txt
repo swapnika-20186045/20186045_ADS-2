@@ -363,17 +363,13 @@ Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:2:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:15: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:18: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 169). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:2:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 145). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
