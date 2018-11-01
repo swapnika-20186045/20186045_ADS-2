@@ -11,20 +11,27 @@ public final class Solution {
 		// System.out.println(hypernymsFileName + "lollll");
 		// System.out.println(wn.nouns());
 		String str2 = StdIn.readString();
-		try {
-			switch (str2) {
-				case "Graph":
-					WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
-					// System.out.println(wn.getDg().toString());
-					// System.out.println(wn.readHypernyms(str2));
-				break;
-				case "Queries":
-				break;
-				default:
-				break;
-			}
-		} catch (Exception e) {
-            throw new IllegalArgumentException("IllegalArgumentException");
-        }
+		switch (str2) {
+			// WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
+			case "Graph":
+				// System.out.println(wn.getDg().toString());
+				WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
+				wn.display();
+			break;
+			case "Queries":
+				WordNet wnq = new WordNet(synsetsFileName, hypernymsFileName);
+				String line = StdIn.readLine();
+				while (!line.equals("")) {
+					String[] strarr = line.split(" ");
+					if (strarr[0].equals("null")) {
+						System.out.println("IllegalArgumentException");
+					}
+					System.out.println("distance = " + wnq.distance(strarr[0], strarr[1]) + "ancestor = " + wnq.sap(strarr[0], strarr[1]));
+					line = StdIn.readLine();
+				}
+			break;
+			default:
+			break;
+		}
 	}
 }

@@ -3,6 +3,7 @@ public class WordNet {
     private LinearProbingHashST<String, ArrayList<Integer>> nounST;
     private LinearProbingHashST<Integer, String> idST;
     private Digraph dg;
+    private SAP sap;
 
     public Digraph getDg() {
         return this.dg;
@@ -58,18 +59,23 @@ public class WordNet {
                 }
             }
 
-            DirectedCycle dc = new DirectedCycle(dg);
-            if (dc.hasCycle()) {
-                System.out.println("Cycle detected");
-            } else if (dg.noOfOutdegree() > 1) {
-                System.out.println("Multiple roots");
-            } else {
-                System.out.println(dg.toString());
-            }
+            
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         //graph built
+        sap = new SAP(dg);
+    }
+
+    public void display() {
+        DirectedCycle dc = new DirectedCycle(dg);
+        if (dc.hasCycle()) {
+            System.out.println("Cycle detected");
+        } else if (dg.noOfOutdegree() > 1) {
+            System.out.println("Multiple roots");
+        } else {
+            System.out.println(dg.toString());
+        }
     }
     public Iterable<String> nouns() {
         return nounST.keys();
@@ -79,4 +85,24 @@ public class WordNet {
         return nounST.contains(word);
     }
 
+    public int distance(String nounA, String nounB) {
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+            throw new IllegalArgumentException();
+        }
+        ArrayList<Integer> idsA = nounST.get(nounA);
+        ArrayList<Integer> idsB = nounST.get(nounB);
+
+        return sap.length(idsA, idsB);
+    }
+
+    public String sap(String nounA, String nounB) {
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+            throw new IllegalArgumentException();
+        }
+        ArrayList<Integer> idsA = nounST.get(nounA);
+        ArrayList<Integer> idsB = nounST.get(nounB);
+
+        int anc = sap.ancestor(idsA, idsB);
+        return idST.get(anc);
+    }
 }
