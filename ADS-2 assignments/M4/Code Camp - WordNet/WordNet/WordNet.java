@@ -1,13 +1,42 @@
+/**
+ * wordnet.
+ */
 import java.util.ArrayList;
+/**
+ * Class for word net.
+ */
 public class WordNet {
+    /**
+     * declaration of ST.
+     */
     private LinearProbingHashST<String, ArrayList<Integer>> nounST;
+    /**
+     * declaration of ST.
+     */
     private LinearProbingHashST<Integer, String> idST;
+    /**
+     * declaration of digraph.
+     */
     private Digraph dg;
+    /**
+     * declaration of SAP.
+     */
     private SAP sap;
 
+    /**
+     * Gets the dg.
+     *
+     * @return     The dg.
+     */
     public Digraph getDg() {
         return this.dg;
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
     public WordNet(final String synsets, final String hypernyms) {
         nounST = new LinearProbingHashST<String, ArrayList<Integer>>();
         idST = new LinearProbingHashST<Integer, String>();
@@ -17,9 +46,9 @@ public class WordNet {
             while (!in.isEmpty()) {
 
                 String line = in.readLine();
-                
+
                 assert !line.equals("");
-                
+
                 String[] tokens = line.split(",");
                 id = Integer.parseInt(tokens[0]);
                 String[] nouns = tokens[1].split(" ");
@@ -50,7 +79,7 @@ public class WordNet {
                 String line = in.readLine();
                 String[] tokens = line.split(",");
                 // if (tokens.length > 2) {
-                //     throw new IllegalArgumentException("Multiple roots"); 
+                //     throw new IllegalArgumentException("Multiple roots");
                 // }
                 int synsetIds = Integer.parseInt(tokens[0]);
 
@@ -59,7 +88,7 @@ public class WordNet {
                 }
             }
 
-            
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -67,6 +96,9 @@ public class WordNet {
         sap = new SAP(dg);
     }
 
+    /**
+     * display output.
+     */
     public void display() {
         DirectedCycle dc = new DirectedCycle(dg);
         if (dc.hasCycle()) {
@@ -77,15 +109,33 @@ public class WordNet {
             System.out.println(dg.toString());
         }
     }
+    /**
+     * return nouns.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<String> nouns() {
         return nounST.keys();
     }
-
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(final String word) {
         return nounST.contains(word);
     }
-
-    public int distance(String nounA, String nounB) {
+    /**
+     * checks the distance.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int distance(final String nounA, final String nounB) {
         if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException();
         }
@@ -94,8 +144,15 @@ public class WordNet {
 
         return sap.length(idsA, idsB);
     }
-
-    public String sap(String nounA, String nounB) {
+    /**
+     * ancestor path.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String sap(final String nounA, final String nounB) {
         if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException();
         }
@@ -106,3 +163,6 @@ public class WordNet {
         return idST.get(anc);
     }
 }
+
+
+
