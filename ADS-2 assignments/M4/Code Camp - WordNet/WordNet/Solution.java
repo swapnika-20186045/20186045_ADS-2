@@ -11,16 +11,20 @@ public final class Solution {
 		// System.out.println(hypernymsFileName + "lollll");
 		// System.out.println(wn.nouns());
 		String str2 = StdIn.readString();
-		switch (str2) {
-			case "Graph":
-				WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
-				// System.out.println(wn.getDg().toString());
-				// System.out.println(wn.readHypernyms(str2));
-			break;
-		// 	case "Queries":
-		// 	break;
-			default:
-			break;
-		}
+		try {
+			switch (str2) {
+				case "Graph":
+					WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
+					// System.out.println(wn.getDg().toString());
+					// System.out.println(wn.readHypernyms(str2));
+				break;
+				case "Queries":
+				break;
+				default:
+				break;
+			}
+		} catch (Exception e) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
 	}
 }

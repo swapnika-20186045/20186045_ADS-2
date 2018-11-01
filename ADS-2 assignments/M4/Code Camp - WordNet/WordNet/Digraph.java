@@ -94,7 +94,7 @@ public class Digraph {
     public int outdegree(final int v) {
         return adj[v].size();
     }
-    public int maxOutdegree() {
+    public int noOfOutdegree() {
         int max = 0;
         for(int i = 0; i < vertices; i++) {
             if (outdegree(i) == 0) {

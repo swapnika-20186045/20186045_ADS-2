@@ -33,7 +33,7 @@ Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:97:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'maxOutdegree' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'maxOutdegree' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:97:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'noOfOutdegree' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'noOfOutdegree' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:97:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:99:12: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:134:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -296,9 +296,11 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:2:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:16: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:17: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:18: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:19: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

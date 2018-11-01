@@ -61,7 +61,7 @@ public class WordNet {
             DirectedCycle dc = new DirectedCycle(dg);
             if (dc.hasCycle()) {
                 System.out.println("Cycle detected");
-            } else if (dg.maxOutdegree() > 1) {
+            } else if (dg.noOfOutdegree() > 1) {
                 System.out.println("Multiple roots");
             } else {
                 System.out.println(dg.toString());
