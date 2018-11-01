@@ -256,32 +256,21 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:2:21: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:6:16: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:6:24: 'G' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:6:24: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:12:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:12:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:12:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:12:30: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:53:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:53:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:53:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:53:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:92:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:92:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:92:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:92:44: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:118:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:118:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:118:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:118:46: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:8:21: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:17:30: 'G' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:17:30: Expected @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:17:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:75: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:75:35: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:75:48: Expected @param tag for 'w'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:116: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:116:47: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:116:74: Expected @param tag for 'w'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:143: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:143:49: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\SAP.java:144:27: Expected @param tag for 'w'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...
