@@ -3,14 +3,14 @@ public final class Solution {
 		//empty constructor.
 	}
 	public static void main(final String[] args) {
-		String synsetsFileName = StdIn.readString();
+		String synsetsFileName = StdIn.readLine();
 		// In in = new In(str);
 		// System.out.println(strsynsetsFileName + "lol");
-		String hypernymsFileName = StdIn.readString();
+		String hypernymsFileName = StdIn.readLine();
 		// In in1 = new In(str1);
 		// System.out.println(hypernymsFileName + "lollll");
 		// System.out.println(wn.nouns());
-		String str2 = StdIn.readString();
+		String str2 = StdIn.readLine();
 		switch (str2) {
 			// WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
 			case "Graph":
@@ -19,16 +19,21 @@ public final class Solution {
 				wn.display();
 			break;
 			case "Queries":
-				WordNet wnq = new WordNet(synsetsFileName, hypernymsFileName);
-				String line = StdIn.readLine();
-				while (!line.equals("")) {
-					String[] strarr = line.split(" ");
-					if (strarr[0].equals("null")) {
-						System.out.println("IllegalArgumentException");
+			// System.out.println("lll");
+				try {
+					WordNet wnq = new WordNet(synsetsFileName, hypernymsFileName);
+					// System.out.println(line + "ooo");
+					while (StdIn.hasNextLine()) {
+						String line = StdIn.readLine();
+						String[] strarr = line.split(" ");
+						if (strarr[0].equals("null")) {
+							System.out.println("IllegalArgumentException");
+						}
+						System.out.println("distance = " + wnq.distance(strarr[0], strarr[1]) + ", ancestor = " + wnq.sap(strarr[0], strarr[1]));
 					}
-					System.out.println("distance = " + wnq.distance(strarr[0], strarr[1]) + "ancestor = " + wnq.sap(strarr[0], strarr[1]));
-					line = StdIn.readLine();
-				}
+				} catch (Exception e) {
+            		System.out.println(e.getMessage());
+        		}
 			break;
 			default:
 			break;

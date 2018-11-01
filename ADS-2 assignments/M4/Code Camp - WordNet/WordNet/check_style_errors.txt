@@ -368,11 +368,12 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:15: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:18: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:22: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:29: Line is longer than 80 characters (found 159). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 103). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 169). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
