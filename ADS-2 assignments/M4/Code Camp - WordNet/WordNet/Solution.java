@@ -26,8 +26,12 @@ public final class Solution {
         // WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
         case "Graph":
             // System.out.println(wn.getDg().toString());
-            WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
-            wn.display();
+            try {
+                WordNet wn = new WordNet(synsetsFileName, hypernymsFileName);
+                wn.display();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
             break;
         case "Queries":
             // System.out.println("lll");
@@ -43,11 +47,11 @@ public final class Solution {
                             "IllegalArgumentException");
                     }
                     System.out.println("distance = " + wnq.distance(strarr[0],
-                        strarr[1]) + ", ancestor = " + wnq.sap(strarr[0],
-                        strarr[1]));
+                                       strarr[1]) + ", ancestor = " + wnq.sap(strarr[0],
+                                               strarr[1]));
                 }
             } catch (Exception e) {
-                System.out.println("IllegalArgumentException");
+                System.out.println(e.getMessage());
             }
             break;
         default:

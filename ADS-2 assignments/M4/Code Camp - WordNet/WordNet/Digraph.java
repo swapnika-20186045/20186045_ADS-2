@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Class for di graph.
  */
 public class Digraph {

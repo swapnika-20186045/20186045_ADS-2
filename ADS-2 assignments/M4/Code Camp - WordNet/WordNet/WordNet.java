@@ -102,9 +102,9 @@ public class WordNet {
     public void display() {
         DirectedCycle dc = new DirectedCycle(dg);
         if (dc.hasCycle()) {
-            System.out.println("Cycle detected");
+            throw new IllegalArgumentException("Cycle detected");
         } else if (dg.noOfOutdegree() > 1) {
-            System.out.println("Multiple roots");
+            throw new IllegalArgumentException("Multiple roots");
         } else {
             System.out.println(dg.toString());
         }
