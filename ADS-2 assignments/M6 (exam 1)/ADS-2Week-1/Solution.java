@@ -2,6 +2,9 @@
  * Page Rank.
  */
 import java.util.Scanner;
+/**
+ * { item_description}.
+ */
 import java.util.Arrays;
 /**
  * Class for page rank.
