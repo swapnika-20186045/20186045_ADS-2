@@ -30,13 +30,14 @@ public final class Solution {
 		// to read the adjacency list from std input
 		// and build the graph
 		Digraph dg = new Digraph(vertices);
-		while(vertices > 0 ) {
+		int vcopy = vertices;
+		while(vcopy > 0 ) {
 			String[] varr = scan.nextLine().split(" ");
 			int v = Integer.parseInt(varr[0]);
 			for(int i = 1; i < varr.length; i++) {
 				dg.addEdge(v, Integer.parseInt(varr[i]));
 			}
-			vertices--;
+			vcopy--;
 		}
 		System.out.println(dg.V() + " vertices, "+ dg.E() + " edges ");
 
