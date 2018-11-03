@@ -39,6 +39,14 @@ public final class Solution {
 			vertices--;
 		}
 		System.out.println(dg.V() + " vertices, "+ dg.E() + " edges ");
+
+		for(int j = 0; j < vertices; j++) {
+			System.out.print(j + ": ");
+			for(int k : dg.adj(j)) {
+				System.out.print(k + " ");
+			}
+			System.out.println();
+		}
 		
 		// Create page rank object and pass the graph object to the constructor
 		
