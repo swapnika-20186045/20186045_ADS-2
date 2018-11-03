@@ -3,31 +3,27 @@
  */
 import java.util.Scanner;
 /**
- * { item_description}.
- */
-import java.util.Arrays;
-/**
  * Class for page rank.
  */
 class PageRank {
     /**
      * declaration of variable.
      */
-    Digraph graph;
+    private Digraph graph;
     /**
      * declaration of variable.
      */
-    double value;
+    private double value;
     /**
      * declaration of variable.
      */
-    Digraph reverse;
+    private Digraph reverse;
     /**
      * Constructs the object.
      *
      * @param      graphh  The graphh
      */
-    PageRank(Digraph graphh) {
+    PageRank(final Digraph graphh) {
         this.graph = graphh;
         value = (graph.V());
         reverse = graph.reverse();
@@ -40,7 +36,7 @@ class PageRank {
      *
      * @return     The pr.
      */
-    public double getPR(int vertex) {
+    public double getPR(final int vertex) {
         double pr = 1.0 / value;
         return PrCal(pr, vertex);
     }
@@ -52,7 +48,7 @@ class PageRank {
      *
      * @return     { description_of_the_return_value }
      */
-    public double PrCal(double pr, int vertex) {
+    public double PrCal(final double pr, final int vertex) {
         double[] prarr = new double[graph.V()];
         for (int i = 0; i < prarr.length; i++) {
             prarr[i] = pr;
@@ -86,7 +82,7 @@ class WebSearch {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -98,7 +94,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // read the first line of the input to get the number of vertices
         Scanner scan = new Scanner(System.in);
         int vertices = scan.nextInt();
@@ -142,3 +138,6 @@ public class Solution {
 
     }
 }
+
+
+

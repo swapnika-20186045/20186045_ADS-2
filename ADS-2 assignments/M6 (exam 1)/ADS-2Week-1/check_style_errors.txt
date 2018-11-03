@@ -222,21 +222,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:8:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:16:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:20:12: Variable 'value' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:24:13: Variable 'reverse' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:30:14: Parameter graphh should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:43:25: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:55:19: Name 'PrCal' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:55:25: Parameter pr should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:55:36: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:64:35: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:89: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:101:29: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:51:19: Name 'PrCal' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:60:35: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
