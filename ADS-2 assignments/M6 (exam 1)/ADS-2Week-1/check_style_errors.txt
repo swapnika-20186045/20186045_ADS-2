@@ -222,10 +222,15 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:51:19: Name 'PrCal' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:60:35: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:46:8: Unused @param tag for 'pr'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:47:8: Unused @param tag for 'vertex'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:49: Unused Javadoc tag. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:51:17: Name 'PrCal' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:57:29: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:112: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
