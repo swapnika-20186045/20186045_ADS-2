@@ -42,9 +42,9 @@ class EdgeWeightedGraph {
     /**
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
      *
-     * @param  G the edge-weighted graph to copy
+     * @param  ewg the edge-weighted graph to copy
      */
-    public EdgeWeightedGraph(final EdgeWeightedGraph ewg) {
+    EdgeWeightedGraph(final EdgeWeightedGraph ewg) {
         this(ewg.ver());
         this.es = ewg.edg();
         for (int v = 0; v < ewg.ver(); v++) {
@@ -77,12 +77,16 @@ class EdgeWeightedGraph {
     public int edg() {
         return es;
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= vs)
-            throw new IllegalArgumentException("vertex " + v +
-                        " is not between 0 and " + (vs - 1));
+        if (v < 0 || v >= vs) {
+            throw new IllegalArgumentException("vertex " + v
+                + " is not between 0 and " + (vs - 1));
+        }
     }
 
     /**
@@ -141,10 +145,10 @@ class EdgeWeightedGraph {
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-    // add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
