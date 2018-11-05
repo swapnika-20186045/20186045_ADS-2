@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:31:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
@@ -164,9 +162,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:28:24: Name 'THOUSAND' must match pattern '^[a-z][a-zA-Z0-9]*$'. [StaticVariableName]
@@ -174,9 +170,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
