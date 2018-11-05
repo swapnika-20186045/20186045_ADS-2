@@ -5,7 +5,8 @@ class EdgeWeightedGraph {
     /**
      * { var_description }.
      */
-    private static final String NEWLINE = System.getProperty("line.separator");
+    private static final String NEWLINE = System.getProperty(
+        "line.separator");
     /**
      * { var_description }.
      */
@@ -19,14 +20,16 @@ class EdgeWeightedGraph {
      */
     private Bag<Edge>[] adj;
     /**
-     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
+     * Initializes an empty edge-weighted graph with {@code V} vertices
+     * and 0 edges.
      *
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int V) {
         if (V < 0) {
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
         }
         this.V = V;
         this.E = 0;
@@ -36,64 +39,18 @@ class EdgeWeightedGraph {
         }
     }
 
-    // /**
-    //  * Initializes a random edge-weighted graph with {@code V} vertices and <em>E</em> edges.
-    //  *
-    //  * @param  V the number of vertices
-    //  * @param  E the number of edges
-    //  * @throws IllegalArgumentException if {@code V < 0}
-    //  * @throws IllegalArgumentException if {@code E < 0}
-    //  */
-    // public EdgeWeightedGraph(int V, int E) {
-    //     this(V);
-    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
-    //     for (int i = 0; i < E; i++) {
-    //         int v = StdRandom.uniform(V);
-    //         int w = StdRandom.uniform(V);
-    //         double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
-    //         Edge e = new Edge(v, w, weight);
-    //         addEdge(e);
-    //     }
-    // }
-
-    // /**  
-    //  * Initializes an edge-weighted graph from an input stream.
-    //  * The format is the number of vertices <em>V</em>,
-    //  * followed by the number of edges <em>E</em>,
-    //  * followed by <em>E</em> pairs of vertices and edge weights,
-    //  * with each entry separated by whitespace.
-    //  *
-    //  * @param  in the input stream
-    //  * @throws IllegalArgumentException if the endpoints of any edge are not in prescribed range
-    //  * @throws IllegalArgumentException if the number of vertices or edges is negative
-    //  */
-    // public EdgeWeightedGraph(In in) {
-    //     this(in.readInt());
-    //     int E = in.readInt();
-    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
-    //     for (int i = 0; i < E; i++) {
-    //         int v = in.readInt();
-    //         int w = in.readInt();
-    //         validateVertex(v);
-    //         validateVertex(w);
-    //         double weight = in.readDouble();
-    //         Edge e = new Edge(v, w, weight);
-    //         addEdge(e);
-    //     }
-    // }
-
     /**
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
      *
      * @param  G the edge-weighted graph to copy
      */
-    public EdgeWeightedGraph(final EdgeWeightedGraph G) {
-        this(G.ver());
-        this.E = G.E();
-        for (int v = 0; v < G.ver(); v++) {
+    public EdgeWeightedGraph(final EdgeWeightedGraph ewg) {
+        this(ewg.ver());
+        this.E = ewg.E();
+        for (int v = 0; v < ewg.ver(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : G.adj[v]) {
+            for (Edge e : ewg.adj[v]) {
                 reverse.push(e);
             }
             for (Edge e : reverse) {
@@ -124,14 +81,16 @@ class EdgeWeightedGraph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(final int v) {
         if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+            throw new IllegalArgumentException("vertex " + v +
+                " is not between 0 and " + (V-1));
     }
 
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
      * @param  e the edge
-     * @throws IllegalArgumentException unless both endpoints are between {@code 0} and {@code V-1}
+     * @throws IllegalArgumentException unless both endpoints are between
+     * {@code 0} and {@code V-1}
      */
     public void addEdge(final Edge e) {
         int v = e.either();
@@ -169,7 +128,8 @@ class EdgeWeightedGraph {
 
     /**
      * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph, use foreach notation:
+     * To iterate over the edges in this edge-weighted graph, use foreach
+     * notation:
      * {@code for (Edge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
@@ -196,7 +156,8 @@ class EdgeWeightedGraph {
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>, followed by the number
+     * of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists of edges
      */
     public String toString() {
