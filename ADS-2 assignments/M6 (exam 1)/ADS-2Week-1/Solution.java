@@ -2,6 +2,9 @@
  * Page Rank.
  */
 import java.util.Scanner;
+/**
+ * import arrays.
+ */
 import java.util.Arrays;
 /**
  * Class for page rank.
@@ -19,6 +22,10 @@ class PageRank {
      * declaration of variable.
      */
     private Digraph reverse;
+    /**
+     * declaration of number.
+     */
+    private static int THOUSAND = 1000;
     /**
      * Constructs the object.
      *
@@ -38,23 +45,21 @@ class PageRank {
     //  */
     // public double getPR(final int vertex) {
     //     double pr = 1.0 / value;
-    //     return PrCal(pr, vertex);
+    //     return prCal(pr, vertex);
     // }
     /**
      * calculation of pr.
      *
-     * @param      pr      { parameter_description }
-     * @param      vertex  The vertex
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public void PrCal() {
+     **/
+    public void prCal() {
         double[] prarr = new double[value];
         double[] prarr1 = new double[value];
+
         for (int i = 0; i < value; i++) {
             prarr[i] = 1.0 / value;
         }
-        for (int i = 0; i < 1000; i++) {
+        //1000 * V - due to nested for-loop.(worst-case).
+        for (int i = 0; i < THOUSAND; i++) {
             for (int j = 0; j < value; j++) {
                 double rank = 0.0;
                 for (int k : reverse.adj(j)) {
@@ -97,19 +102,21 @@ public final class Solution {
     public static void main(final String[] args) {
         // read the first line of the input to get the number of vertices
         Scanner scan = new Scanner(System.in);
-        int vertices = scan.nextInt();
+        int vertices = scan.nextInt(); scan.nextLine();
         // iterate count of vertices times
         // to read the adjacency list from std input
         // and build the graph
-        scan.nextLine();
 
         Digraph d4PR = new Digraph(vertices);
         Digraph d = new Digraph(vertices);
+        //V + E - to create no. of vertices and add no. of edges.
         for (int i = 0; i < vertices; i++) {
             String[] tokens = scan.nextLine().split(" ");
             if (tokens.length == 1) {
                 for (int j = 0; j < vertices; j++) {
-                    if (j != i) d4PR.addEdge(i, j);
+                    if (j != i) {
+                        d4PR.addEdge(i, j);
+                    }
                 }
             } else {
                 for (int j = 1; j < tokens.length; j++) {
@@ -124,7 +131,7 @@ public final class Solution {
         // Create page rank object and pass the graph object to the constructor
         // print the page rank object
         PageRank p = new PageRank(d4PR);
-        p.PrCal();
+        p.prCal();
         // This part is only for the final test case
 
         // File path to the web content
@@ -140,6 +147,3 @@ public final class Solution {
 
     }
 }
-
-
-
