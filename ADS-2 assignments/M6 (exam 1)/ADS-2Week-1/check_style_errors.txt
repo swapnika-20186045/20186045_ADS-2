@@ -2,21 +2,13 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:31:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:44:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:48:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:64:20: Parameter V should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:64:24: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:64:24: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:65: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:81:20: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:81:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:84: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:103:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:112:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:121: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:62:20: Parameter vertices should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:62:24: 'vertices' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:63: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:77:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:79:34: Expected @param tag for 'dg'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\In.java:28: Line has trailing spaces. [RegexpSingleline]

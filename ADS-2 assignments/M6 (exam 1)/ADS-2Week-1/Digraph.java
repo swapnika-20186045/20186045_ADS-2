@@ -27,8 +27,6 @@
  *
  ***************************************************************/
 
-
-import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
@@ -41,11 +39,11 @@ public class Digraph {
     /**
      * { var_description }.
      */
-    private final int V;           // number of vertices in this digraph
+    private final int vertices;           // number of vertices in this digraph
     /**
      * { var_description }.
      */
-    private int E;                 // number of edges in this digraph
+    private int edges;                 // number of edges in this digraph
     /**
      * { var_description }.
      */
@@ -58,17 +56,17 @@ public class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  V the number of vertices
+     * @param  vertices the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int V) {
-        if (V < 0) throw new IllegalArgumentException(
+    public Digraph(int vertices) {
+        if (vertices < 0) throw new IllegalArgumentException(
             "Number of vertices in a Digraph must be nonnegative");
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.vertices = vertices;
+        this.edges = 0;
+        indegree = new int[vertices];
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int v = 0; v < vertices; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -78,15 +76,16 @@ public class Digraph {
      *
      * @param  G the digraph to copy
      */
-    public Digraph(Digraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < V; v++)
-            this.indegree[v] = G.indegree(v);
-        for (int v = 0; v < G.V(); v++) {
+    public Digraph(final Digraph dg) {
+        this(dg.getVertices());
+        this.edges = dg.getEdges();
+        for (int v = 0; v < vertices; v++) {
+            this.indegree[v] = dg.indegree(v);
+        }
+        for (int v = 0; v < dg.getVertices(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
+            for (int w : dg.adj[v]) {
                 reverse.push(w);
             }
             for (int w : reverse) {
@@ -100,8 +99,8 @@ public class Digraph {
      *
      * @return the number of vertices in this digraph
      */
-    public int V() {
-        return V;
+    public int getVertices() {
+        return vertices;
     }
 
     /**
@@ -109,8 +108,8 @@ public class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int E() {
-        return E;
+    public int getEdges() {
+        return edges;
     }
     /**
      * { function_description }.
@@ -118,9 +117,10 @@ public class Digraph {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V)
+        if (v < 0 || v >= vertices) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v + " is not between 0 and " + (vertices - 1));
+        }
     }
 
     /**
@@ -137,7 +137,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edges++;
     }
 
     /**
@@ -185,8 +185,8 @@ public class Digraph {
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
+        Digraph reverse = new Digraph(vertices);
+        for (int v = 0; v < vertices; v++) {
             for (int w : adj(v)) {
                 reverse.addEdge(w, v);
             }
@@ -203,8 +203,8 @@ public class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        for (int v = 0; v < vertices; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));

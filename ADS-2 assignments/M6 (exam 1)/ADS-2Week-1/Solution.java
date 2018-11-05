@@ -33,7 +33,7 @@ class PageRank {
      */
     PageRank(final Digraph graphh) {
         this.graph = graphh;
-        value = (graph.V());
+        value = (graph.getVertices());
         reverse = graph.reverse();
     }
     // /**
@@ -128,7 +128,8 @@ public final class Solution {
             }
         }
         System.out.println(d);
-        // Create page rank object and pass the graph object to the constructor
+        // Create page rank object and pass the graph object to the
+        // constructor
         // print the page rank object
         PageRank p = new PageRank(d4PR);
         p.prCal();
