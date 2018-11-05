@@ -25,7 +25,7 @@ class PageRank {
     /**
      * declaration of number.
      */
-    private final static int THOUSAND = 1000;
+    private final int THOUSAND = 1000;
     /**
      * Constructs the object.
      *
@@ -148,3 +148,5 @@ public final class Solution {
 
     }
 }
+
+
