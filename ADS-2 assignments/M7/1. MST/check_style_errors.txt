@@ -3,26 +3,16 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:29:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:29:40: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:29:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:45:8: Unused @param tag for 'G'. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:47:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:47:54: Expected @param tag for 'ewg'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:77:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:82:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:83: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:84:62: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:85:46: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:85:47: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:121: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:144:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:145: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\EdgeWeightedGraph.java:147: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:30:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:34: 'for' construct must use '{}'s. [NeedBraces]
