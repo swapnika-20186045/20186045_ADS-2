@@ -110,13 +110,3 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\StdOut.java:225:37: '7.0' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 62 errors.
-Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:29:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:30: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:47:21: Parameter p should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:95: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:96: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\UF.java:105:5: Missing a Javadoc comment. [JavadocMethod]
-Audit done.
-Checkstyle ends with 7 errors.
