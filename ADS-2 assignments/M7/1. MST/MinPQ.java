@@ -27,7 +27,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      initCapacity  the initial capacity of this priority queue
      */
-    public MinPQ(final int initCapacity) {
+    MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -35,10 +35,10 @@ class MinPQ<Key> implements Iterable<Key> {
     * using the given comparator.
     *
     * @param  initCapacity the initial capacity of this priority queue
-    * @param  comparator the order in which to compare the keys
+    * @param  comparatorr the order in which to compare the keys
     */
-    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
-        this.comparator = comparator;
+    MinPQ(final int initCapacity, final Comparator<Key> comparatorr) {
+        this.comparator = comparatorr;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -46,7 +46,7 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue.
      */
-    public MinPQ() {
+    MinPQ() {
         this(1);
     }
 
@@ -117,14 +117,18 @@ class MinPQ<Key> implements Iterable<Key> {
      * @throws     NoSuchElementException  if this priority queue is empty
      */
     public Key delMin() {
-        if (isEmpty()) throw new NoSuchElementException(
+        if (isEmpty()) {
+            throw new NoSuchElementException(
                 "Priority queue underflow");
+        }
         Key min = pq[1];
         exch(1, n--);
         sink(1);
         pq[n + 1] = null;
         // to avoid loiterig and help with garbage collection
-        if ((n > 0) && (n == (pq.length - 1) / 4)) resize(pq.length / 2);
+        if ((n > 0) && (n == (pq.length - 1) / 4)) {
+            resize(pq.length / 2);
+        }
         assert isMinHeap();
         return min;
     }
@@ -137,7 +141,7 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * { function_description }.
      *
-     * @param      k     { parameter_description }
+     * @param      a     { parameter_description }
      */
     private void swim(final int a) {
         int k = a;
@@ -156,8 +160,8 @@ class MinPQ<Key> implements Iterable<Key> {
         int k = a;
         while (2 * k <= n) {
             int j = 2 * k;
-            if (j < n && greater(j, j + 1)) j++;
-            if (!greater(k, j)) break;
+            if (j < n && greater(j, j + 1)) {j++;}
+            if (!greater(k, j)) {break;}
             exch(k, j);
             k = j;
         }
@@ -235,7 +239,7 @@ class MinPQ<Key> implements Iterable<Key> {
         /**
          * Constructs the object.
          */
-        public HeapIterator() {
+        HeapIterator() {
             if (comparator == null) {
                 copy = new MinPQ<Key>(size());
             } else {
