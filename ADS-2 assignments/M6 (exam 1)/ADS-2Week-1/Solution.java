@@ -25,7 +25,7 @@ class PageRank {
     /**
      * declaration of number.
      */
-    private final int THOUSAND = 1000;
+    private final int x = 1000;
     /**
      * Constructs the object.
      *
@@ -59,7 +59,7 @@ class PageRank {
             prarr[i] = 1.0 / value;
         }
         //1000 * V - due to nested for-loop.(worst-case).
-        for (int i = 0; i < THOUSAND; i++) {
+        for (int i = 0; i < x; i++) {
             for (int j = 0; j < value; j++) {
                 double rank = 0.0;
                 for (int k : reverse.adj(j)) {
