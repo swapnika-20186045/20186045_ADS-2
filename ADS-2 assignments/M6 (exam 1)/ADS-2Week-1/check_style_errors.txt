@@ -2,13 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:62:20: Parameter vertices should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:62:24: 'vertices' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:63: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:77:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Digraph.java:79:34: Expected @param tag for 'dg'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\In.java:28: Line has trailing spaces. [RegexpSingleline]
@@ -157,10 +152,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:28:24: Name 'THOUSAND' must match pattern '^[a-z][a-zA-Z0-9]*$'. [StaticVariableName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:28:35: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M6 (exam 1)\ADS-2Week-1\Solution.java:28:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

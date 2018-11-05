@@ -56,13 +56,15 @@ public class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  vertices the number of vertices
+     * @param  verticess the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int vertices) {
-        if (vertices < 0) throw new IllegalArgumentException(
+    public Digraph(final int verticess) {
+        this.vertices = verticess;
+        if (vertices < 0) {
+            throw new IllegalArgumentException(
             "Number of vertices in a Digraph must be nonnegative");
-        this.vertices = vertices;
+        }
         this.edges = 0;
         indegree = new int[vertices];
         adj = (Bag<Integer>[]) new Bag[vertices];
@@ -74,7 +76,7 @@ public class Digraph {
     /**
      * Initializes a new digraph that is a deep copy of the specified digraph.
      *
-     * @param  G the digraph to copy
+     * @param  dg the digraph to copy
      */
     public Digraph(final Digraph dg) {
         this(dg.getVertices());
