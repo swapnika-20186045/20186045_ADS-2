@@ -1,7 +1,14 @@
+/**
+ * Min PQ.
+ */
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
+/**
+ * Class for minimum pq.
+ *
+ * @param      <Key>  The key
+ */
 class MinPQ<Key> implements Iterable<Key> {
     /**
      * { var_description }.
@@ -24,13 +31,13 @@ class MinPQ<Key> implements Iterable<Key> {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
-     /* Initializes an empty priority queue with the given initial capacity,
-     * using the given comparator.
-     *
-     * @param  initCapacity the initial capacity of this priority queue
-     * @param  comparator the order in which to compare the keys
-     */
-    public MinPQ(int initCapacity, Comparator<Key> comparator) {
+    /* Initializes an empty priority queue with the given initial capacity,
+    * using the given comparator.
+    *
+    * @param  initCapacity the initial capacity of this priority queue
+    * @param  comparator the order in which to compare the keys
+    */
+    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -72,7 +79,7 @@ class MinPQ<Key> implements Iterable<Key> {
         return pq[1];
     }
 
-    
+
     /**
      * {helper function to double the size of the heap array}.
      *
@@ -110,20 +117,22 @@ class MinPQ<Key> implements Iterable<Key> {
      * @throws     NoSuchElementException  if this priority queue is empty
      */
     public Key delMin() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) throw new NoSuchElementException(
+                "Priority queue underflow");
         Key min = pq[1];
         exch(1, n--);
         sink(1);
-        pq[n+1] = null;     // to avoid loiterig and help with garbage collection
+        pq[n + 1] = null;
+        // to avoid loiterig and help with garbage collection
         if ((n > 0) && (n == (pq.length - 1) / 4)) resize(pq.length / 2);
         assert isMinHeap();
         return min;
     }
 
 
-   /***************************************************************************
-    * Helper functions to restore the heap invariant.
-    ***************************************************************************/
+    /**************************************************************
+     * Helper functions to restore the heap invariant.
+     **************************************************************/
 
     /**
      * { function_description }.
@@ -132,9 +141,9 @@ class MinPQ<Key> implements Iterable<Key> {
      */
     private void swim(final int a) {
         int k = a;
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
+        while (k > 1 && greater(k / 2, k)) {
+            exch(k, k / 2);
+            k = k / 2;
         }
     }
 
@@ -145,9 +154,9 @@ class MinPQ<Key> implements Iterable<Key> {
      */
     private void sink(final int a) {
         int k = a;
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)) j++;
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && greater(j, j + 1)) j++;
             if (!greater(k, j)) break;
             exch(k, j);
             k = j;
@@ -164,8 +173,7 @@ class MinPQ<Key> implements Iterable<Key> {
     private boolean greater(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
-        }
-        else {
+        } else {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
@@ -198,11 +206,11 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     True if minimum heap, False otherwise.
      */
     private boolean isMinHeap(final int k) {
-        if (k > n) return true;
-        int left = 2*k;
-        int right = 2*k + 1;
-        if (left  <= n && greater(k, left))  return false;
-        if (right <= n && greater(k, right)) return false;
+        if (k > n) {return true;}
+        int left = 2 * k;
+        int right = 2 * k + 1;
+        if (left  <= n && greater(k, left))  {return false;}
+        if (right <= n && greater(k, right)) {return false;}
         return isMinHeap(left) && isMinHeap(right);
     }
     /**
