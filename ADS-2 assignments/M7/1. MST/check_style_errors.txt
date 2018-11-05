@@ -5,20 +5,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:30:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:34: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:36: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:44:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:53: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:58: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:60: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:74: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:75: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:146: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:154:56: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\LazyPrimMST.java:155: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\MinPQ.java:30:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M7\1. MST\MinPQ.java:40:5: Missing a Javadoc comment. [JavadocMethod]
