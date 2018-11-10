@@ -26,7 +26,7 @@ public final class Solution {
         while (i > 0) {
             String[] arr = scan.nextLine().split(" ");
             Edge ed = new Edge(Integer.parseInt(arr[0]),
-                               Integer.parseInt(arr[1]), Integer.parseInt(arr[2]));
+                        Integer.parseInt(arr[1]), Integer.parseInt(arr[2]));
             ewg.addEdge(ed);
             i--;
         }
