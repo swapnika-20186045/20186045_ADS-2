@@ -16,6 +16,11 @@ public final class Solution {
     private Solution() {
         //empty Constructor.
     }
+    /**
+     * Client program.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int lines = Integer.parseInt(scan.nextLine());
