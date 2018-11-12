@@ -1,0 +1,16 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:24:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:24:17: '256' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:32: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:36: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:40: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:44: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:56:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:57:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\LSD.java:58:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+Audit done.
+Checkstyle ends with 9 errors.
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M13\Radix Sorts\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 1 errors.
