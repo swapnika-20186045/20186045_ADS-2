@@ -30,8 +30,9 @@ public final class Solution {
                 tst.put(sa.select(i), j++);
             }
         }
-        for (String word : tst.keysWithPrefix(prefix))
+        for (String word : tst.keysWithPrefix(prefix)) {
             System.out.println(word);
+        }
     }
     /**
      * Loads words.
@@ -44,3 +45,7 @@ public final class Solution {
         return words;
     }
 }
+
+
+
+
