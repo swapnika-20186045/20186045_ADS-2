@@ -5,6 +5,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\TST.java:144:29: Parameter x should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 1 errors.

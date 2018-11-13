@@ -141,7 +141,7 @@ public class TST<Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> put(Node<Value> x, final String key,
+    private Node<Value> put(final Node<Value> x, final String key,
                             final Value val, final int d) {
         char c = key.charAt(d);
         Node<Value> x1 = x;
