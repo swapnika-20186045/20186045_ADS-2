@@ -185,11 +185,9 @@ public class TST<Value> {
             char c = query.charAt(i);
             if (c < x.c) {
                 x = x.left;
-            }
-            else if (c > x.c) {
+            } else if (c > x.c) {
                 x = x.right;
-            }
-            else {
+            } else {
                 i++;
                 if (x.val != null) {
                     length = i;
