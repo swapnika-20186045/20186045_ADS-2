@@ -152,23 +152,23 @@ public class Queue<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      firstt The first
          */
-        public ListIterator(final Node<Item> first) {
-            current = first;
+        ListIterator(final Node<Item> firstt) {
+            current = firstt;
         }
         /**
          * Determines if it has next.
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext()  { 
+        public boolean hasNext()  {
             return current != null;
         }
         /**
          * { function_description }.
          */
-        public void remove() { 
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**

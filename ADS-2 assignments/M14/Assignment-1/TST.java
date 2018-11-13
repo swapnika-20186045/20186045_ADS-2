@@ -144,20 +144,21 @@ public class TST<Value> {
     private Node<Value> put(Node<Value> x, final String key,
                             final Value val, final int d) {
         char c = key.charAt(d);
-        if (x == null) {
-            x = new Node<Value>();
-            x.c = c;
+        Node<Value> x1 = x;
+        if (x1 == null) {
+            x1 = new Node<Value>();
+            x1.c = c;
         }
-        if (c < x.c) {
-            x.left  = put(x.left,  key, val, d);
-        } else if (c > x.c) {
-            x.right = put(x.right, key, val, d);
+        if (c < x1.c) {
+            x1.left  = put(x1.left,  key, val, d);
+        } else if (c > x1.c) {
+            x1.right = put(x1.right, key, val, d);
         } else if (d < key.length() - 1) {
-            x.mid = put(x.mid,   key, val, d + 1);
+            x1.mid = put(x1.mid,   key, val, d + 1);
         } else {
-            x.val   = val;
+            x1.val   = val;
         }
-        return x;
+        return x1;
     }
 
     /**

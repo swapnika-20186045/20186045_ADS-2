@@ -26,7 +26,7 @@ public class SuffixArray {
     /**
      * Class for suffix.
      */
-    private static class Suffix implements Comparable<Suffix> {
+    private static final class Suffix implements Comparable<Suffix> {
         /**
          * { var_description }.
          */
@@ -38,12 +38,12 @@ public class SuffixArray {
         /**
          * Constructs the object.
          *
-         * @param      text   The text
-         * @param      index  The index
+         * @param      textt   The text
+         * @param      indexx  The index
          */
-        private Suffix(final String text, final int index) {
-            this.text = text;
-            this.index = index;
+        private Suffix(final String textt, final int indexx) {
+            this.text = textt;
+            this.index = indexx;
         }
         /**
          * { function_description }.
