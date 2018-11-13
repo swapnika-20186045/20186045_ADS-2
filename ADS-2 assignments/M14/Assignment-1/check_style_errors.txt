@@ -175,15 +175,9 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:17: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:21:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\Solution.java:33: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\SuffixArray.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M14\Assignment-1\SuffixArray.java:4:5: Missing a Javadoc comment. [JavadocVariable]
