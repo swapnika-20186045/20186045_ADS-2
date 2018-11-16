@@ -22,7 +22,7 @@ public class BoggleSolver {
     /**
      * visited chars.
      */
-    private boolean[][] visited;
+    private boolean[][] visited1;
     /**
      * Constructs the object.
      *
@@ -55,11 +55,11 @@ public class BoggleSolver {
         if (board == null) {
             throw new IllegalArgumentException("board is null");
         }
-        visited = new boolean[board.rows()][board.cols()];
+        visited1 = new boolean[board.rows()][board.cols()];
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
                 String str = appendCharacter("", board.getLetter(i, j));
-                dfs(board, visited, i, j, str);
+                dfs(board, visited1, i, j, str);
             }
         }
         return validWordsSet;
