@@ -83,9 +83,17 @@ public class Solution {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
-	public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static BinarySearchST<String, Integer> loadDictionary(
+		final String file) {
+		BinarySearchST<String, Integer>  st = new
+		BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] dict = toReadFile(file);
 		for (int i = 0; i < dict.length; i++) {
