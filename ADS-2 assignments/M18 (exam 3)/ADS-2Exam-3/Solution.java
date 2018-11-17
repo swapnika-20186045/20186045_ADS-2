@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Solution {
 
@@ -158,9 +159,12 @@ class T9 {
 		}
 		for (int i = 0; i < k; i++) {
 			for(String eachOne : words) {
+				if(max.delMax() == tst.get(eachOne)) {
 					arr.add(eachOne);
+				}
 			}
 		}
+		Collections.sort(arr);
 		return arr;
 	}
 
