@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Solution {
 
@@ -91,7 +92,7 @@ public class Solution {
 	 * @return     { description_of_the_return_value }
 	 */
 	public static BinarySearchST<String, Integer> loadDictionary(
-		final String file) {
+	    final String file) {
 		BinarySearchST<String, Integer>  st = new
 		BinarySearchST<String, Integer>();
 		// your code goes here
@@ -148,14 +149,24 @@ class T9 {
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+	public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
 		// your code goes here
-		return null;
+		ArrayList<String> arr = new ArrayList<>();
+		MaxPQ<Integer> max = new MaxPQ<>();
+		for(String each : words) {
+			max.insert(tst.get(each));
+		}
+		for (int i = 0; i < k; i++) {
+			for(String eachOne : words) {
+					arr.add(eachOne);
+			}
+		}
+		return arr;
 	}
 
-	// final output
-	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
-		return getSuggestions(potentialWords(t9Signature), k);
+		// final output
+		// Don't modify this method.
+		public Iterable<String> t9(String t9Signature, int k) {
+			return getSuggestions(potentialWords(t9Signature), k);
+		}
 	}
-}
