@@ -154,12 +154,13 @@ class T9 {
 		// your code goes here
 		ArrayList<String> arr = new ArrayList<>();
 		MaxPQ<Integer> max = new MaxPQ<>();
-		for(String each : words) {
+		for (String each : words) {
 			max.insert(tst.get(each));
 		}
 		for (int i = 0; i < k; i++) {
-			for(String eachOne : words) {
-				if(max.delMax() == tst.get(eachOne)) {
+			int freq = max.delMax();
+			for (String eachOne : words) {
+				if (freq == tst.get(eachOne)) {
 					arr.add(eachOne);
 				}
 			}
@@ -168,9 +169,9 @@ class T9 {
 		return arr;
 	}
 
-		// final output
-		// Don't modify this method.
-		public Iterable<String> t9(String t9Signature, int k) {
-			return getSuggestions(potentialWords(t9Signature), k);
-		}
+	// final output
+	// Don't modify this method.
+	public Iterable<String> t9(String t9Signature, int k) {
+		return getSuggestions(potentialWords(t9Signature), k);
 	}
+}

@@ -391,14 +391,11 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:147:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:153: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:153:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:157:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:161:28: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:162:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:173:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:173:44: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:173:64: Parameter k should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:174:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:174:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:174:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
