@@ -120,7 +120,7 @@ public final class Solution {
         for (int i = 0; i < dict.length; i++) {
             String str = dict[i].toLowerCase();
             if (st.contains(str)) {
-                st.put(str , st.get(str) + 1);
+                st.put(str, st.get(str) + 1);
             } else {
                 st.put(str, 1);
             }
@@ -142,7 +142,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<>();
         for (String eachWord : st.keys()) {
@@ -162,7 +162,13 @@ class T9 {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
-
+    /**
+     * potential words.
+     *
+     * @param      t9Signature  The t 9 signature
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         ArrayList<String> arrlist = new ArrayList<>();
