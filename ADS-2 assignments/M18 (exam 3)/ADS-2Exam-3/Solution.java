@@ -100,20 +100,41 @@ public class Solution {
 	}
 
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
-
+	/**
+	 * tst for loading words with freq.
+	 */
+	private TST<Integer> tst;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      st    { parameter_description }
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
+		tst = new TST<>();
+		for (String eachWord : st.keys()) {
+			tst.put(eachWord, st.get(eachWord));
+		}
 	}
 
-	// get all the prefixes that match with given prefix.
-	public Iterable<String> getAllWords(String prefix) {
+	//get all the prefixes that match with given prefix.
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
+	public Iterable<String> getAllWords(final String prefix) {
 		// your code goes here
-		return null;
+		return tst.keysWithPrefix(prefix);
 	}
 
-	public Iterable<String> potentialWords(String t9Signature) {
+	public Iterable<String> potentialWords(final String t9Signature) {
 		// your code goes here
 		return null;
 	}
