@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\BinarySearchST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\BinarySearchST.java:41: Line is longer than 80 characters (found 81). [LineLength]
@@ -316,44 +314,10 @@ Audit done.
 Checkstyle ends with 72 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:41:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:41:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:42:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:43:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:46: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:47:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:48:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:85: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:85: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:94:29: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:99: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:100: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:105: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:111: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:111: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:134: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:136: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:143: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:144:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:146:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:146:17: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:146:37: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:146:48: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:150: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:150:43: '{' at column 29 should have line break after. [LeftCurly]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:151: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:151:43: '{' at column 29 should have line break after. [LeftCurly]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:153:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Queue.java:154: 'if' construct must use '{}'s. [NeedBraces]
-Audit done.
-Checkstyle ends with 33 errors.
-Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
