@@ -389,6 +389,9 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:126:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:126:19: Parameter st should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:147:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:150:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:153:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:153:48: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:154: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:154:35: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:157: Line is longer than 80 characters (found 88). [LineLength]
@@ -405,10 +408,12 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:172:35: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:175: Line is longer than 80 characters (found 106). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:175:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:179:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:182: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:187:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\Solution.java:209:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 37 errors.
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-2\ADS-2 assignments\M18 (exam 3)\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

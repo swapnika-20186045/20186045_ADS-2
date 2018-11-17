@@ -92,7 +92,7 @@ messagesome
 going
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 hello
 pizza
@@ -157,7 +157,67 @@ fine
 seeking
 
 Your Output: 
-No valid words found.
+hello
+pizza
+what
+sunday
+ball
+call
+involve
+finish
+gone
+good
+home
+battery
+friends
+watches
+morning
+tonight
+shop
+phne
+any
+bmw
+box
+boy
+coz
+jay
+jaz
+kay
+law
+lay
+ammo
+das
+ear
+far
+send
+pocked
+pest
+rest
+woo
+paying
+saying
+james
+lands
+hates
+casting
+packing
+peeps
+bam
+bao
+cam
+can
+abt
+act
+bat
+cat
+mines
+liver
+lives
+dime
+dine
+find
+fine
+seeking
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########

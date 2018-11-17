@@ -147,10 +147,10 @@ class T9 {
 	public Iterable<String> potentialWords(final String t9Signature) {
 		// your code goes here
 		ArrayList<String> arrlist = new ArrayList<>();
-		for (String each : tst.keys()) {
-			String[] strarr = each.split(" ");
+		for(String each: tst.keys()) {
+			String[] strarr = each.split("");
 			String number = "";
-			for (String ch : strarr) {
+			for(String ch : strarr){
 				if(ch.equals("a") || ch.equals("b") || ch.equals("c")) {
 					number = number + "2";
 				}
@@ -176,10 +176,10 @@ class T9 {
 					number = number + "9";
 				}
 			}
-			if (number.equals(t9Signature)) {
+			if(number.equals(t9Signature)) {
 				arrlist.add(each);
 			}
-		}
+		} 
 		return arrlist;
 	}
 
